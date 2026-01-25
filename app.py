@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-MODEL = "openrouter/auto"
+MODEL = "tngtech/deepseek-r1t2-chimera:free"
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 @app.route("/")
@@ -72,3 +72,4 @@ def generate():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
