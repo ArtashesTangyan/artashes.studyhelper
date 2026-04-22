@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-MODEL = "tngtech/deepseek-r1t2-chimera:free"
+MODEL = "inclusionai/ling-2.6-flash:free"
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 @app.route("/")
